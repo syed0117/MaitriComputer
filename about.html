@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matri Computer</title>
+    <!-- =========================================================
+    					Bootstrap
+    ============================================================-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- =========================================================
+    					Custom Css
+    ============================================================-->
+    <link rel="stylesheet" type="text/css" href="./assets/Css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/Css/about.css">
+        <!-- =========================================================
+    					For Toggle Bar Css
+    ============================================================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- =========================================================
+    					AOS Animate
+    ============================================================-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- =========================================================
+    					BOX Icons CSS
+    ============================================================-->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- =========================================================
+    					GOOGLE FONTS
+    ============================================================-->
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Lobster&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <!-- =========================================================
+                        FONT AWESOME CDN  
+    ============================================================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+ <!-- =========================================================
+    					NAVBAR STARTS HERE
+    ============================================================-->
+
+    <header style="background-color: #C9EEFF;" class="sticky-top">
+
+      <div class="container-fluid">
+
+          <div class="navb-logo">
+              <a href="index.html"><img src="./assets/img/logo5.png" alt="Logo"></a>
+          </div>
+
+          <div class="navb-items d-none d-md-flex">
+
+              <div class="item p-0 mx-4">
+                  <a href="index.html">HOME</a>
+              </div>
+
+              <div class="item p-0 mx-4">
+                  <a href="course.html">COURSES</a>
+              </div>
+
+              <div class="item p-0 mx-4">
+                  <a href="result.html">RESULTS</a>
+              </div>
+
+              <div class="item p-0 mx-4">
+                  <a href="about.html">ABOUT</a>
+              </div>
+      
+              <div class="item p-0 mx-4">
+                  <a href="useful-link.html">USEFUL LINKS</a>
+              </div>
+
+              <div class="item-button">
+                  <a href="contact.html" type="button">Let's talk</a>
+              </div>
+          </div>
+
+          <!-- Button trigger modal -->
+          <div class="mobile-toggler d-lg-none" id="toggle">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+                  <i class="fa-solid fa-bars"></i>
+              </a>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+
+                      <div class="modal-header">
+                          <!-- <img src="./assets/img/logo4.png" alt="Logo"> -->
+            <h1><SPAN style="color: #BBD6B8; font-weight: bolder;letter-spacing: 15px; text-justify: auto;">MAITRI</SPAN> <span style="color: #FBFFB1; letter-spacing: 3px;">COMPUETR</span></h1>
+                          <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                      </div>
+
+                      <div class="modal-body">
+                          
+                          <div class="modal-line">
+                              <i class="fa-solid fa-house"></i><a href="index.html">HOME</a>
+                          </div>
+
+                          <div class="modal-line">
+                              <i class="fa-solid fa-bell-concierge"></i><a href="course.html">COURSES</a>
+                          </div>
+
+                          <div class="modal-line">
+                              <i class="fa-solid fa-file-lines"></i> <a href="result.html">RESULTS</a>
+                          </div>
+
+                          <div class="modal-line">
+                              <i class="fa-solid fa-circle-info"></i><a href="about.html">ABOUT</a>
+                          </div>
+
+                          <div class="modal-line">
+                            <i class="fa-solid fa-circle-info"></i><a href="useful-link.html">USEFUL LINKS</a>
+                          </div>
+
+
+                          <a href="contact.html" class="navb-button" type="button">Let's talk</a>
+                      </div>
+
+                      <div class="mobile-modal-footer">
+                          
+                          <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+                          <a target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                          <a target="_blank" href="#"><i class="fa-brands fa-youtube"></i></a>
+                          <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </header>
+
+
+<!-- =========================================================
+            NAVBAR END HERE
+  ============================================================-->
+
+    
+    
+    
+    
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> about us </h1>
+ 
+    <div class="row">
+ 
+       <div class="video">
+          <img src="./assets/img/about1.jpg" class="img-fluid"></img>
+       </div>
+ 
+       <div class="content">
+          <h3>"Maitri Computer Institute - Empowering minds, one keystroke at a time."</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas et vero mollitia nemo corporis consequatur aspernatur distinctio dignissimos velit nam.</p>
+          <a href="#services" class="btn">read more</a>
+       </div>
+ 
+    </div>
+ 
+    <div class="box-container">
+ 
+       <div class="box">
+          <h3>10+</h3>
+          <p>years of experience</p>
+       </div>
+ 
+       <div class="box">
+          <h3>1500+</h3>
+          <p>Students Completed</p>
+       </div>
+ 
+       <div class="box">
+          <h3>790+</h3>
+          <p>satiesfied Students</p>
+       </div>
+ 
+       <div class="box">
+          <h3>2+</h3>
+          <p>Center</p>
+       </div>
+ 
+    </div>
+ 
+ </section>
+ 
+ <!-- about section ends -->
+ 
+ <!-- services section starts  -->
+ 
+ <section class="services" id="services">
+ 
+    <h1 class="heading"> COURSE FEATURES</h1>
+ 
+    <div class="box-container">
+ 
+       <div class="box">
+          <img src="./assets/img/about/c1.jpg" alt="">
+          <h3>Curriculum</h3>
+          <p>Designed by Experts Most Advanced Course Contents, Videos, Assignments & Installation guides</p>
+       </div>
+ 
+       <div class="box">
+          <img src="./assets/img/about/c2.jpg" alt="">
+          <h3>Application Based Learning</h3>
+          <p>Theory - Hands-on Training - Case Studies - Live Projects</p>
+       </div>
+ 
+       <div class="box">
+          <img src="./assets/img/about/c3.jpg" alt="">
+          <h3>Mentor Connect</h3>
+          <p>Get exclusive one on one Instructor Guidance</p>
+       </div>
+ 
+       <div class="box">
+          <img src="./assets/img/about/c4.jpg" alt="">
+          <h3>Dedicated Student Support Team</h3>
+          <p>Help beyond the classroom hours - Always buzzing with students interacting with each other</p>
+       </div>
+ 
+       <div class="box">
+          <img src="./assets/img/about/c5.jpg" alt="">
+          <h3>Industry-specific projects</h3>
+          <p>Choose group project from Bankings, Retail, Healthcare, Entertainment, Ecommerce, & Sports</p>
+       </div>
+ 
+       <div class="box">
+          <img src="./assets/img/about/c6.jpg" alt="">
+          <h3>Interview preparation</h3>
+          <p>Interview Question and Answers, Mock Exams & Sample Interviews Conducted.</p>
+       </div>
+ 
+       <div class="box">
+          <img src="./assets/img/about/c7.jpg" alt="">
+          <h3>Get Hired Faster with ICIT</h3>
+          <p>Our Placement Team will be sending you job opportunities and arranging interviews until you get placement in IT</p>
+       </div>
+ 
+       <div class="box">
+          <img src="./assets/img/about/c8.jpg" alt="">
+          <h3>Sourcing & Interview Scheduling</h3>
+          <p>We will be sending your Updated Resume to IT Recruiters & Get your Interview Scheduled in Bangalore and Chennai.</p>
+       </div>
+       
+    </div>
+ 
+ </section>
+ 
+ <!-- services section ends -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- =========================================================
+                            FOOTER STARTS HERE
+    ============================================================-->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-cta py-5">
+          <div class="row">
+            <div class="col-sm-6 col-xl-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="cta-text">
+                  <h4>Find us</h4>
+                  <span>Near Lady Hearding Washim</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-phone"></i>
+                <div class="cta-text">
+                  <h4>Call us</h4>
+                  <span>9623098572 / 7083850332</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-envelope-open"></i>
+                <div class="cta-text">
+                  <h4>Mail us</h4>
+                  <span>maitricomputereducation@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content py-5">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="#"><h3 style="color: #ff5e14; font-weight: 700; font-size: 38px;">MAITRI COMPUETR</h3></a>
+                </div>
+                <div class="footer-text">
+                  <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing elit,Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="footer-widget">
+                 <div class="footer-widget-heading">
+                   <h3>Useful Links</h3>
+                 </div>
+                 <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">about</a></li>
+                  <li><a href="course.html">Course</a></li>
+                  <li><a href="https://alcreadiness.mkcl.org/">MKCL</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="about.html">About us</a></li>
+                  <li><a href="course.html">Our Services</a></li>
+                  <li><a href="https://mscit.mkcl.org/">Ms-Cit</a></li>
+                  <li><a href="contact.html">Contact us</a></li>
+                  <li><a href="https://www.mkcl.org/events">Latest Events</a></li>
+                 </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="footer-widget">
+                 <div class="footer-widget-heading">
+                   <h3>Subscribe</h3>
+                 </div>
+                  <div class="footer-text">
+                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                  </div>
+                  <div class="subscribe-form">
+                    <form action="#">
+                      <input type="text" placeholder="Email Address">
+                      <button><i class="fab fa-telegram-plane"></i></button>
+                    </form>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>Copyright © 2023, All Right Reserved <a href="#" class="ms-1 mb-5">Perfect Enterprises</a></p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 text-right d-none d-lg-block">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="course.html">Course</a></li>
+                  <li><a href="result.html">Results</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- =========================================================
+                            FOOTER ENDS HERE
+    ============================================================-->
+  
+      <!-- AOS JS -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+          crossorigin="anonymous"></script>
+  
+      <script>
+          AOS.init();
+      </script>
+  <!-- ============================================================================ -->
+      <!-- =========================================================
+                          Bootstrap Js
+      ============================================================-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- =========================================================
+                          Jquerry Cdn link
+      ============================================================-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <!-- =========================================================
+                          CUSTOM JS 
+      ============================================================-->
+      <script type="text/javascript" src="./assets/Js/script.js"></script>
+    </body>
+  </html>
+  
